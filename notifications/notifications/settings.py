@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'notifications.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'edumetrics_alerts',
+        'USER': 'edumetrics_user',
+        'PASSWORD': 'intention12@',
+        'HOST': 'edu-metrics.com',
+        'PORT': '3306',  # If not specified, it uses the default MySQL port (3306)
     }
 }
 
