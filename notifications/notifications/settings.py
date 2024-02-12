@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-y_dt*!v!fv_+1b3%q-=f9%!40@#dzvi0pjj)6pa9o5-*b=ecy4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.8.100']
+ALLOWED_HOSTS = ['192.168.8.100', 'notifications.edu-metrics.com']
 
 
 # Application definition
