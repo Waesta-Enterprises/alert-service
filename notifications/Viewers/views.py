@@ -8,7 +8,7 @@ def fetch(request):
     notifications_ = []
     if request.method == 'GET':
         user_id = request.GET['user_id']
-        notifications = Notification.objects.exclude(Viewers__id=user_id)
+        notifications = Notification.objects.exclude(Viewers__viewer_id=user_id)
         for notification in notifications:
             try:
                 viewer = Viewer.objects.get(viewer_id=user_id)
